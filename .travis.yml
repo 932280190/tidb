@@ -3,4 +3,8 @@ language: go
 go:
   - 1.7
     
-script: make dev
+script: 
+  - cd ../../
+  - mv 932280190 pingcap
+  - cd pingcap/tidb
+  - make dev
